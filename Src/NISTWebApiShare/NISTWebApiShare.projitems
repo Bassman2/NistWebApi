@@ -6,8 +6,37 @@
     <SharedGUID>5d8bfc95-9513-4d63-bc22-6a860ace17f1</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>NISTWebApiShare</Import_RootNamespace>
+    <Import_RootNamespace>NISTWebApi</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CVEScoreVersion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Authentication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Complexity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Impact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV3Complexity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV3Impact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV3Interaction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV3Privileges.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV3Scope.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV3Vector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nist.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\BaseMetricV2Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\BaseMetricV3Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPEModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPEPageModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPERefModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPEResultModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPETitleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEItemModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEPageModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEResultModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV2Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Vector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV3Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ImpactModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\SourceGenerationContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\NistService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Usings.cs" />
   </ItemGroup>
 </Project>
