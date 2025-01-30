@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{38A00ABD-551E-4E72-B99F-1FF82529C247}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WebServiceClientShare", "..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.shproj", "{8CAACB04-9656-4B7C-A692-422FCA51474B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NISTWebApi80", "Src\NISTWebApi80\NISTWebApi80.csproj", "{51469927-4F8D-4019-9050-26B935579F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NISTWebApi90", "Src\NISTWebApi90\NISTWebApi90.csproj", "{530B3298-B719-4B56-AAD5-F2C90F53184F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NISTWebApiShare", "Src\NISTWebApiShare\NISTWebApiShare.shproj", "{5D8BFC95-9513-4D63-BC22-6A860ACE17F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51469927-4F8D-4019-9050-26B935579F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51469927-4F8D-4019-9050-26B935579F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51469927-4F8D-4019-9050-26B935579F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51469927-4F8D-4019-9050-26B935579F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{530B3298-B719-4B56-AAD5-F2C90F53184F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530B3298-B719-4B56-AAD5-F2C90F53184F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530B3298-B719-4B56-AAD5-F2C90F53184F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530B3298-B719-4B56-AAD5-F2C90F53184F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8CAACB04-9656-4B7C-A692-422FCA51474B} = {38A00ABD-551E-4E72-B99F-1FF82529C247}
+		{51469927-4F8D-4019-9050-26B935579F43} = {38A00ABD-551E-4E72-B99F-1FF82529C247}
+		{530B3298-B719-4B56-AAD5-F2C90F53184F} = {38A00ABD-551E-4E72-B99F-1FF82529C247}
+		{5D8BFC95-9513-4D63-BC22-6A860ACE17F1} = {38A00ABD-551E-4E72-B99F-1FF82529C247}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Src\NISTWebApiShare\NISTWebApiShare.projitems*{51469927-4f8d-4019-9050-26b935579f43}*SharedItemsImports = 5
+		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{51469927-4f8d-4019-9050-26b935579f43}*SharedItemsImports = 5
+		Src\NISTWebApiShare\NISTWebApiShare.projitems*{530b3298-b719-4b56-aad5-f2c90f53184f}*SharedItemsImports = 5
+		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{530b3298-b719-4b56-aad5-f2c90f53184f}*SharedItemsImports = 5
+		Src\NISTWebApiShare\NISTWebApiShare.projitems*{5d8bfc95-9513-4d63-bc22-6a860ace17f1}*SharedItemsImports = 13
+		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{8caacb04-9656-4b7c-a692-422fca51474b}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
