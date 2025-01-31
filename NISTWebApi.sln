@@ -19,6 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E68E3C4A-8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NISTConsole", "Demo\NISTConsole\NISTConsole.csproj", "{0A4A1375-8B51-416C-84B3-B4D8A49F7C93}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NISTWebApiUnitTestShare", "Test\NISTWebApiUnitTestShare\NISTWebApiUnitTestShare.shproj", "{0FF42C63-E989-42BA-8722-F40BBB8B2D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NISTWebApiUnitTest90", "Test\NISTWebApiUnitTest90\NISTWebApiUnitTest90.csproj", "{BCCF34E0-E7E0-4B9E-93BB-380E00CDF154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NISTWebApiUnitTest80", "Test\NISTWebApiUnitTest80\NISTWebApiUnitTest80.csproj", "{16CD2FD9-01B7-44F9-A25E-38FE6EB6F2C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +43,14 @@ Global
 		{0A4A1375-8B51-416C-84B3-B4D8A49F7C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A4A1375-8B51-416C-84B3-B4D8A49F7C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A4A1375-8B51-416C-84B3-B4D8A49F7C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCCF34E0-E7E0-4B9E-93BB-380E00CDF154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCCF34E0-E7E0-4B9E-93BB-380E00CDF154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCCF34E0-E7E0-4B9E-93BB-380E00CDF154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCCF34E0-E7E0-4B9E-93BB-380E00CDF154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CD2FD9-01B7-44F9-A25E-38FE6EB6F2C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CD2FD9-01B7-44F9-A25E-38FE6EB6F2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CD2FD9-01B7-44F9-A25E-38FE6EB6F2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CD2FD9-01B7-44F9-A25E-38FE6EB6F2C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,13 +61,19 @@ Global
 		{530B3298-B719-4B56-AAD5-F2C90F53184F} = {38A00ABD-551E-4E72-B99F-1FF82529C247}
 		{5D8BFC95-9513-4D63-BC22-6A860ACE17F1} = {38A00ABD-551E-4E72-B99F-1FF82529C247}
 		{0A4A1375-8B51-416C-84B3-B4D8A49F7C93} = {A146A667-82DB-4DC3-B3BE-D8E1783A284C}
+		{0FF42C63-E989-42BA-8722-F40BBB8B2D70} = {E68E3C4A-8C5D-4127-A27B-133F46A31ABF}
+		{BCCF34E0-E7E0-4B9E-93BB-380E00CDF154} = {E68E3C4A-8C5D-4127-A27B-133F46A31ABF}
+		{16CD2FD9-01B7-44F9-A25E-38FE6EB6F2C3} = {E68E3C4A-8C5D-4127-A27B-133F46A31ABF}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Test\NISTWebApiUnitTestShare\NISTWebApiUnitTestShare.projitems*{0ff42c63-e989-42ba-8722-f40bbb8b2d70}*SharedItemsImports = 13
+		Test\NISTWebApiUnitTestShare\NISTWebApiUnitTestShare.projitems*{16cd2fd9-01b7-44f9-a25e-38fe6eb6f2c3}*SharedItemsImports = 5
 		Src\NISTWebApiShare\NISTWebApiShare.projitems*{51469927-4f8d-4019-9050-26b935579f43}*SharedItemsImports = 5
 		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{51469927-4f8d-4019-9050-26b935579f43}*SharedItemsImports = 5
 		Src\NISTWebApiShare\NISTWebApiShare.projitems*{530b3298-b719-4b56-aad5-f2c90f53184f}*SharedItemsImports = 5
 		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{530b3298-b719-4b56-aad5-f2c90f53184f}*SharedItemsImports = 5
 		Src\NISTWebApiShare\NISTWebApiShare.projitems*{5d8bfc95-9513-4d63-bc22-6a860ace17f1}*SharedItemsImports = 13
 		..\WebServiceClient\Src\WebServiceClientShare\WebServiceClientShare.projitems*{8caacb04-9656-4b7c-a692-422fca51474b}*SharedItemsImports = 13
+		Test\NISTWebApiUnitTestShare\NISTWebApiUnitTestShare.projitems*{bccf34e0-e7e0-4b9e-93bb-380e00cdf154}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
