@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Json;
+using System.Text.RegularExpressions;
 
 namespace NISTWebApi.Service;
 
@@ -6,11 +7,13 @@ namespace NISTWebApi.Service;
 // https://nvd.nist.gov/developers/products
 // https://nvd.nist.gov/developers/vulnerabilities
 
-internal class NistService(Uri host, string token, string appName)
+internal class NistService(Uri host, string? token, string appName)
     : JsonService(host, null, appName, SourceGenerationContext.Default)
 {
 
     private const int resultsPerPage = 200;
+
+    private const string apiPath = "rest/json/cpes/2.0";
 
     //protected override string? AuthenticationTestUrl => ""; 
 
@@ -20,19 +23,48 @@ internal class NistService(Uri host, string token, string appName)
     //    throw new WebServiceException(error?.ToString(), response.RequestMessage?.RequestUri, response.StatusCode, response.ReasonPhrase, memberName);
     //}
 
-    public async IAsyncEnumerable<CPEModel> GetCPEProductsAsync(string keyword, [EnumeratorCancellation] CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
+    #region Products
+
+    public IAsyncEnumerable<CPEModel> GetCPEProductsByNameIdAsync(string match, CancellationToken cancellationToken)
+    {
+        string requestUri = CombineUrl(apiPath, ("apiKey", token), ("cpeNameId", match));
+        return GetProductsAsync(requestUri, cancellationToken);
+    }
+    
+    public IAsyncEnumerable<CPEModel> GetCPEProductsMatchStringAsync(string match, CancellationToken cancellationToken)
+    {
+        string requestUri = CombineUrl(apiPath, ("apiKey", token), ("cpeMatchString", match));
+        return GetProductsAsync(requestUri, cancellationToken);
+    }
+
+    public IAsyncEnumerable<CPEModel> GetCPEProductsByKeywordExactMatchAsync(string match, CancellationToken cancellationToken)
+    {
+        string requestUri = CombineUrl(apiPath, ("apiKey", token), ("keywordSearch", match), ("keywordExactMatch" , ""));
+        return GetProductsAsync(requestUri, cancellationToken);
+    }
+
+    public IAsyncEnumerable<CPEModel> GetCPEProductsByKeywordSearchAsync(string match, CancellationToken cancellationToken)
+    {
+        string requestUri = CombineUrl(apiPath, ("apiKey", token), ("keywordSearch", match));
+        return GetProductsAsync(requestUri, cancellationToken);
+    }
+
+    private async IAsyncEnumerable<CPEModel> GetProductsAsync(string requestUri, [EnumeratorCancellation] CancellationToken cancellationToken, [CallerMemberName] string memberName = "") 
     {
         long startIndex = 0;
         while (true)
         {
-            // string url = $"rest/json/cpes/1.0?resultsPerPage={resultsPerPage}&startIndex={startIndex}&cpeMatchString={match}&keyword={keyword}";
-            string url = $"rest/json/cpes/1.0?apiKey={token}&resultsPerPage={resultsPerPage}&startIndex={startIndex}&keyword={keyword}";
-            var page = await GetFromJsonAsync<CPEPageModel>(url, cancellationToken, memberName);
-            if (page?.Result.CPEs != null)
+            string reqUri = $"{requestUri}&resultsPerPage={resultsPerPage}&startIndex={startIndex}";
+            var page = await GetFromJsonAsync<CPEPageModel>(reqUri, cancellationToken, memberName);
+            if (cancellationToken.IsCancellationRequested)
             {
-                foreach (var item in page.Result.CPEs)
+                yield break;
+            }
+            if (page != null)
+            {
+                foreach (var item in page.Products!)
                 {
-                    yield return item;
+                    yield return item.CPE!;
                 }
                 startIndex += page.ResultsPerPage;
             }
@@ -40,31 +72,12 @@ internal class NistService(Uri host, string token, string appName)
             {
                 yield break;
             }
-
-        } 
-    }
-
-    public async IAsyncEnumerable<CPEModel> GetCPEVersionsAsync(string match, [EnumeratorCancellation] CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
-    {
-        long startIndex = 0;
-        while(true)
-        {
-            string url = $"rest/json/cpes/1.0?apiKey={token}&resultsPerPage={resultsPerPage}&startIndex={startIndex}&cpeMatchString={match}";
-            var page = await GetFromJsonAsync<CPEPageModel>(url, cancellationToken, memberName);
-            if (page?.Result.CPEs != null)
-            {
-                foreach (var item in page.Result.CPEs)
-                {
-                    yield return item;
-                }
-                startIndex += page.ResultsPerPage;
-            }
-            if (page == null|| startIndex >=  page.TotalResults)
-            {
-                yield break;
-            }
         }
     }
+
+    #endregion
+
+    #region Vulnerabilities
 
     public async IAsyncEnumerable<CVEItemModel> GetCVEsAsync(string match, [EnumeratorCancellation] CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
     {
@@ -87,6 +100,8 @@ internal class NistService(Uri host, string token, string appName)
             }
         } 
     }
+
+    #endregion
 
     public static string ReduceCPE(string cpe)
     {

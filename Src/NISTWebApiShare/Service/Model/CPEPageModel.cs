@@ -11,6 +11,15 @@ internal class CPEPageModel
     [JsonPropertyName("totalResults")]
     public long TotalResults { get; set; }
 
-    [JsonPropertyName("result")]
-    public CPEResultModel? Result { get; set; }
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+
+    [JsonPropertyName("timestamp")]
+    public string? Timestamp { get; set; }
+
+    [JsonPropertyName("products")]
+    public IEnumerable<ProductModel>? Products { get; set; }
 }
