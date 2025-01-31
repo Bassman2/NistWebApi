@@ -2,9 +2,18 @@
 
 internal class CVEResultModel
 {
-    public string? CVE_data_type { get; set; }
-    public string? CVE_data_format { get; set; }
-    public string? CVE_data_version { get; set; }
-    public string? CVE_data_timestamp { get; set; }
-    public IEnumerable<CVEItemModel>? CVE_Items { get; set; }
+    [JsonPropertyName("CVE_data_type")]
+    public string? CVEDataType { get; set; }
+
+    [JsonPropertyName("CVE_data_format")]
+    public string? CVEDataFormat { get; set; }
+
+    [JsonPropertyName("CVE_data_version")]
+    public string? CVEDataVersion { get; set; }
+
+    [JsonPropertyName("CVE_data_timestamp")]
+    public string? CVEDataTimestamp { get; set; }
+
+    [JsonPropertyName("CVE_Items")]
+    public IEnumerable<CVEItemModel>? CVEItems { get; set; }
 }

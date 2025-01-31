@@ -2,6 +2,9 @@
 
 internal class CPETitleModel
 {
-    public string? title { get; set; }
-    public string? lang { get; set; }
+    [JsonPropertyName("title")]
+    public string? Title { get; set; }
+
+    [JsonPropertyName("lang")]
+    public string? Lang { get; set; }
 }

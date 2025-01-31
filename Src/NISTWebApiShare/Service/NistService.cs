@@ -73,9 +73,9 @@ internal class NistService(Uri host, string token, string appName)
         {
             string url = $"rest/json/cves/1.0?apiKey={token}&resultsPerPage={resultsPerPage}&startIndex={startIndex}&cpeMatchString={match}";
             var page = await GetFromJsonAsync<CVEPageModel>(url, cancellationToken, memberName);
-            if (page?.Result?.CVE_Items != null)
+            if (page?.Result?.CVEItems != null)
             {
-                foreach (var item in page.Result.CVE_Items)
+                foreach (var item in page.Result.CVEItems)
                 {
                     yield return item;
                 }

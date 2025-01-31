@@ -12,5 +12,5 @@ internal class CPEPageModel
     public long TotalResults { get; set; }
 
     [JsonPropertyName("result")]
-    public CPEResultModel Result { get; set; }
+    public CPEResultModel? Result { get; set; }
 }

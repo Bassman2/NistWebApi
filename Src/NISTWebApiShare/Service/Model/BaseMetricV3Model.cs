@@ -2,5 +2,6 @@
 
 internal class BaseMetricV3Model
 {
-    public CvssV3Model cvssV3 { get; set; }
+    [JsonPropertyName("cvssV3")]
+    public CvssV3Model CvssV3 { get; set; }
 }

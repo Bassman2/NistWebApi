@@ -3,13 +3,30 @@
 internal class CvssV2Model
 {
     [JsonConverter(typeof(JsonStringEnumConverter<CVEScoreVersion>))]
-    public CVEScoreVersion version { get; set; }
-    public string? vectorString { get; set; }
-    public CvssV2Vector accessVector { get; set; }
-    public CvssV2Complexity accessComplexity { get; set; }
-    public CvssV2Authentication authentication { get; set; }
-    public CvssV2Impact confidentialityImpact { get; set; }
-    public CvssV2Impact integrityImpact { get; set; }
-    public CvssV2Impact availabilityImpact { get; set; }
-    public float baseScore { get; set; }
+    [JsonPropertyName("version")]
+    public CVEScoreVersion Version { get; set; }
+
+    [JsonPropertyName("vectorString")]
+    public string? VectorString { get; set; }
+
+    [JsonPropertyName("accessVector")]
+    public CvssV2Vector AccessVector { get; set; }
+
+    [JsonPropertyName("accessComplexity")]
+    public CvssV2Complexity AccessComplexity { get; set; }
+
+    [JsonPropertyName("authentication")]
+    public CvssV2Authentication Authentication { get; set; }
+
+    [JsonPropertyName("confidentialityImpact")]
+    public CvssV2Impact ConfidentialityImpact { get; set; }
+
+    [JsonPropertyName("integrityImpact")]
+    public CvssV2Impact IntegrityImpact { get; set; }
+
+    [JsonPropertyName("availabilityImpact")]
+    public CvssV2Impact AvailabilityImpact { get; set; }
+
+    [JsonPropertyName("baseScore")]
+    public float BaseScore { get; set; }
 }

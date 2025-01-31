@@ -2,9 +2,16 @@
 
 internal class CVEItemModel
 {
-    public CVEModel? cve { get; set; }
+    [JsonPropertyName("cve")]
+    public CVEModel? Cve { get; set; }
+
     //configurations
-    public ImpactModel? impact { get; set; }
-    public DateTime? publishedDate { get; set; }
-    public DateTime? lastModifiedDate { get; set; }
+    [JsonPropertyName("impact")]
+    public ImpactModel? Impact { get; set; }
+
+    [JsonPropertyName("publishedDate")]
+    public DateTime? PublishedDate { get; set; }
+
+    [JsonPropertyName("lastModifiedDate")]
+    public DateTime? LastModifiedDate { get; set; }
 }
