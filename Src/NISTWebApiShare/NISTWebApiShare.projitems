@@ -28,6 +28,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPERefModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPEResultModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPETitleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEChangModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEItemModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEPageModel.cs" />
@@ -35,9 +36,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV2Model.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Vector.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV3Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\HistoryPageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ImpactModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchPageMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchStringModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\PageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ProductModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\SourceGenerationContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\VulnerabilitiesModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\NistService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Usings.cs" />
   </ItemGroup>

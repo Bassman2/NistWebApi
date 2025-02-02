@@ -1,16 +1,7 @@
 ﻿namespace NISTWebApi.Service.Model;
 
-internal class CVEPageModel
+internal class CVEPageModel : PageModel
 {
-    [JsonPropertyName("resultsPerPage")]
-    public long ResultsPerPage { get; set; }
-
-    [JsonPropertyName("startIndex")]
-    public long StartIndex { get; set; }
-
-    [JsonPropertyName("totalResults")]
-    public long TotalResults { get; set; }
-
-    [JsonPropertyName("result")]
-    public CVEResultModel? Result { get; set; }
+    [JsonPropertyName("vulnerabilities")]
+    public IEnumerable<VulnerabilitiesModel>? Vulnerabilities { get; set; }
 }
