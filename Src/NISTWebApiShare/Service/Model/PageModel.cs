@@ -21,5 +21,5 @@ internal abstract class PageModel
     public DateTime? Timestamp { get; set; }
 
     [JsonIgnore]
-    public abstract IEnumerable<object>? Results { get; }
+    public abstract List<object>? Results { get; }
 }

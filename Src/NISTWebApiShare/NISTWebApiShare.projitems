@@ -40,8 +40,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV3Model.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\HistoryPageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ImpactModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchPageMode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchStringModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchStringEntryModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\PageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ProductModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\SourceGenerationContext.cs" />

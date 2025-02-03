@@ -3,8 +3,8 @@
 internal class HistoryPageModel : PageModel
 {
     [JsonPropertyName("cveChanges")]
-    public IEnumerable<CVEChangModel>? CVEChanges { get; set; }
+    public List<CVEChangModel>? CVEChanges { get; set; }
 
     [JsonIgnore]
-    public override IEnumerable<object>? Results => CVEChanges?.Select(r => r.Value!);
+    public override List<object>? Results => CVEChanges?.Select(static r => r.Value!).ToList<object>();
 }

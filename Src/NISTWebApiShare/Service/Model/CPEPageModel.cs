@@ -3,8 +3,8 @@
 internal class CPEPageModel : PageModel
 {
     [JsonPropertyName("products")]
-    public IEnumerable<ProductModel>? Products { get; set; }
+    public List<ProductModel>? Products { get; set; }
 
     [JsonIgnore]
-    public override IEnumerable<object>? Results => Products?.Select(r => r.CPE!);
+    public override List<object>? Results => Products?.Select(static r => r.CPE!).ToList<object>();
 }

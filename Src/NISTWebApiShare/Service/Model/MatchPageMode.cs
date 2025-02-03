@@ -3,8 +3,8 @@
 internal class MatchPageModel : PageModel
 {
     [JsonPropertyName("matchStrings")]
-    public IEnumerable<MatchStringModel>? MatchStrings { get; set; }
+    public List<MatchStringEntryModel>? MatchStrings { get; set; }
 
     [JsonIgnore]
-    public override IEnumerable<object>? Results => MatchStrings?.Select(r => r.Value!);
+    public override List<object>? Results => MatchStrings?.Select(static r => r.MatchString!).ToList<object>();
 }

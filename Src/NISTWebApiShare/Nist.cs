@@ -23,6 +23,8 @@ public sealed class Nist : IDisposable
         GC.SuppressFinalize(this);
     }
 
+    #region Products
+
     public async IAsyncEnumerable<CPE> GetCPEProductsByNameIdAsync(string nameId, [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
         WebServiceException.ThrowIfNullOrNotConnected(this.service);
@@ -66,4 +68,17 @@ public sealed class Nist : IDisposable
             yield return item.CastModel<CPE>()!;
         }
     }
+
+    public async IAsyncEnumerable<MatchString> GetCPEMatchByCVEIdAsync(string cveId, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    {
+        WebServiceException.ThrowIfNullOrNotConnected(this.service);
+
+        var res = service.GetCPEMatchAsync([("cveId", cveId)], cancellationToken);
+        await foreach (var item in res)
+        {
+            yield return item.CastModel<MatchString>()!;
+        }
+    }
+
+    #endregion
 }
