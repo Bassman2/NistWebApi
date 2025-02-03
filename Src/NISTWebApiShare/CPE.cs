@@ -23,7 +23,7 @@ public class CPE
 
     public DateTime? Created { get; }
 
-    public IEnumerable<CPETitle>? Titles { get; }
+    public List<CPETitle>? Titles { get; }
 
-    public IEnumerable<CPERef>? Refs { get; }
+    public List<CPERef>? Refs { get; }
 }

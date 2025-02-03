@@ -15,5 +15,5 @@ internal class CVEResultModel
     public string? CVEDataTimestamp { get; set; }
 
     [JsonPropertyName("CVE_Items")]
-    public IEnumerable<CVEItemModel>? CVEItems { get; set; }
+    public List<CVEItemModel>? CVEItems { get; set; }
 }

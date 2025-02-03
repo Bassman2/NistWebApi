@@ -18,8 +18,8 @@ internal class CPEModel
     public DateTime? Created { get; set; }
     
     [JsonPropertyName("titles")]
-    public IEnumerable<CPETitleModel>? Titles { get; set; }
+    public List<CPETitleModel>? Titles { get; set; }
 
     [JsonPropertyName("refs")]
-    public IEnumerable<CPERefModel>? Refs { get; set; }
+    public List<CPERefModel>? Refs { get; set; }
 }

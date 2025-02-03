@@ -15,5 +15,5 @@ internal class CPEResultModel
     public string? FeedTimestamp { get; set; }
 
     [JsonPropertyName("cpes")] 
-    public IEnumerable<CPEModel>? CPEs { get; set; }
+    public List<CPEModel>? CPEs { get; set; }
 }
