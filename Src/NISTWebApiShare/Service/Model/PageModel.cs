@@ -1,6 +1,6 @@
 ﻿namespace NISTWebApi.Service.Model;
 
-internal class PageModel
+internal abstract class PageModel
 {
     [JsonPropertyName("resultsPerPage")]
     public long ResultsPerPage { get; set; }
@@ -18,5 +18,8 @@ internal class PageModel
     public string? Version { get; set; }
 
     [JsonPropertyName("timestamp")]
-    public string? Timestamp { get; set; }
+    public DateTime? Timestamp { get; set; }
+
+    [JsonIgnore]
+    public abstract IEnumerable<object>? Results { get; }
 }

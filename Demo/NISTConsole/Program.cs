@@ -13,7 +13,7 @@ namespace NISTConsole
 
                 await foreach (var cpe in cpes)
                 {
-                    Console.WriteLine(cpe.Cpe23Uri);
+                    Console.WriteLine(cpe.Name);
                 }
             }).Wait();        
         }

@@ -10,6 +10,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)CPE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CPERef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CPETitle.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CVEScoreVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Authentication.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Complexity.cs" />

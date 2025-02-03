@@ -10,8 +10,7 @@ public sealed class Nist : IDisposable
 
     public Nist(Uri host, string token, string appName)
     {
-        //service = new(host, token, appName);
-        service = new(host, null, appName);
+        service = new(host, new ApiKeyAuthenticator("apikey", token), appName);
     }
 
     public void Dispose()
