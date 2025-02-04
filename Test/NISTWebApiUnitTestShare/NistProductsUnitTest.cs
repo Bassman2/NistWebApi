@@ -3,9 +3,6 @@
 [TestClass]
 public class NistProductsUnitTest : NistBaseUnitTest
 {
-    private const string cpeKeyword = "libjpeg";
-    private const string cpeName    = "cpe:2.3:a:jpeg:libjpeg:-:*:*:*:*:*:*:*";
-    private const string cpeNameId  = "A50FE15A-D2D7-4D0F-8C7F-F3C4692F430A";
 
     [TestMethod]
     public async Task TestMethodCPEProductsByNameIdAsync()

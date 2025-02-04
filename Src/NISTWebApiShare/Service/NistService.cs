@@ -43,22 +43,22 @@ internal class NistService(Uri host, IAuthenticator? authenticator, string appNa
 
     #region Vulnerabilities
 
-    public IAsyncEnumerable<CVEItemModel> GetCVEsAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
+    public IAsyncEnumerable<CveItemModel> GetCVEsAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
     {
         string requestUri = CombineUrl("rest/json/cves/2.0", values);
-        return GetPagesAsync<CVEItemModel, CVEPageModel>(requestUri, cancellationToken, memberName);
+        return GetPagesAsync<CveItemModel, CVEPageModel>(requestUri, cancellationToken, memberName);
     }
 
-    public IAsyncEnumerable<CVEItemModel> GetCVEHistoryAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
+    public IAsyncEnumerable<ChangeItemModel> GetCVEHistoryAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
     {
         string requestUri = CombineUrl("rest/json/cvehistory/2.0", values);
-        return GetPagesAsync<CVEItemModel, HistoryPageModel>(requestUri, cancellationToken, memberName);
+        return GetPagesAsync<ChangeItemModel, HistoryPageModel>(requestUri, cancellationToken, memberName);
     }
 
     #endregion
 
 
-    public async IAsyncEnumerable<T> GetPagesAsync<T, P>(string requestUri, [EnumeratorCancellation] CancellationToken cancellationToken, [CallerMemberName] string memberName = "") where P : PageModel
+    private async IAsyncEnumerable<T> GetPagesAsync<T, P>(string requestUri, [EnumeratorCancellation] CancellationToken cancellationToken, [CallerMemberName] string memberName = "") where P : PageModel
     {
         string reqUri = requestUri;
         long startIndex = 0;

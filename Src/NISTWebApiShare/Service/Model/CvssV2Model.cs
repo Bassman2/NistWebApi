@@ -2,31 +2,66 @@
 
 internal class CvssV2Model
 {
-    [JsonConverter(typeof(JsonStringEnumConverter<CVEScoreVersion>))]
-    [JsonPropertyName("version")]
-    public CVEScoreVersion Version { get; set; }
+    [JsonPropertyName("source")]
+    public string Source { get; set; } = null!;
 
-    [JsonPropertyName("vectorString")]
-    public string? VectorString { get; set; }
+    [JsonPropertyName("type")]
+    public string Type { get; set; } = null!;
 
-    [JsonPropertyName("accessVector")]
-    public CvssV2Vector AccessVector { get; set; }
+    [JsonPropertyName("cvssData")]
+    public object CvssData { get; set; } = null!;
 
-    [JsonPropertyName("accessComplexity")]
-    public CvssV2Complexity AccessComplexity { get; set; }
+    [JsonPropertyName("baseSeverity")]
+    public string? BaseSeverity { get; set; }
 
-    [JsonPropertyName("authentication")]
-    public CvssV2Authentication Authentication { get; set; }
+    [JsonPropertyName("exploitabilityScore")]
+    public double? ExploitabilityScore { get; set; }
 
-    [JsonPropertyName("confidentialityImpact")]
-    public CvssV2Impact ConfidentialityImpact { get; set; }
+    [JsonPropertyName("impactScore")]
+    public double? ImpactScore { get; set; }
 
-    [JsonPropertyName("integrityImpact")]
-    public CvssV2Impact IntegrityImpact { get; set; }
+    [JsonPropertyName("acInsufInfo")]
+    public bool? AcInsufInfo { get; set; }
 
-    [JsonPropertyName("availabilityImpact")]
-    public CvssV2Impact AvailabilityImpact { get; set; }
+    [JsonPropertyName("obtainAllPrivilege")]
+    public bool? ObtainAllPrivilege { get; set; }
 
-    [JsonPropertyName("baseScore")]
-    public float BaseScore { get; set; }
+    [JsonPropertyName("obtainUserPrivilege")]
+    public bool? ObtainUserPrivilege { get; set; }
+
+    [JsonPropertyName("obtainOtherPrivilege")]
+    public bool? ObtainOtherPrivilege { get; set; }
+
+    [JsonPropertyName("userInteractionRequired")]
+    public bool? UserInteractionRequired { get; set; }
+
+
+
+    //[JsonConverter(typeof(JsonStringEnumConverter<CVEScoreVersion>))]
+    //[JsonPropertyName("version")]
+    //public CVEScoreVersion Version { get; set; }
+
+    //[JsonPropertyName("vectorString")]
+    //public string? VectorString { get; set; }
+
+    //[JsonPropertyName("accessVector")]
+    //public CvssV2Vector AccessVector { get; set; }
+
+    //[JsonPropertyName("accessComplexity")]
+    //public CvssV2Complexity AccessComplexity { get; set; }
+
+    //[JsonPropertyName("authentication")]
+    //public CvssV2Authentication Authentication { get; set; }
+
+    //[JsonPropertyName("confidentialityImpact")]
+    //public CvssV2Impact ConfidentialityImpact { get; set; }
+
+    //[JsonPropertyName("integrityImpact")]
+    //public CvssV2Impact IntegrityImpact { get; set; }
+
+    //[JsonPropertyName("availabilityImpact")]
+    //public CvssV2Impact AvailabilityImpact { get; set; }
+
+    //[JsonPropertyName("baseScore")]
+    //public float BaseScore { get; set; }
 }

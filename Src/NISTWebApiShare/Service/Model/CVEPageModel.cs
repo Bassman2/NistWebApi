@@ -3,8 +3,8 @@
 internal class CVEPageModel : PageModel
 {
     [JsonPropertyName("vulnerabilities")]
-    public List<VulnerabilitiesModel>? Vulnerabilities { get; set; }
+    public List<DefCveItemModel>? Vulnerabilities { get; set; }
 
     [JsonIgnore]
-    public override List<object>? Results => Vulnerabilities?.Select(static r => r.Value!).ToList<object>();
+    public override List<object>? Results => Vulnerabilities?.Select(static r => r.Cve!).ToList<object>();
 }

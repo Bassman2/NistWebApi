@@ -81,4 +81,30 @@ public sealed class Nist : IDisposable
     }
 
     #endregion
+
+    #region Vulnerabilities
+
+    public async IAsyncEnumerable<CVEItem> GetCVEsByCPENameAsync(string cpeName, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    {
+        WebServiceException.ThrowIfNullOrNotConnected(this.service);
+
+        var res = service.GetCVEsAsync([("cpeName", cpeName)], cancellationToken);
+        await foreach (var item in res)
+        {
+            yield return item.CastModel<CVEItem>()!;
+        }
+    }
+
+    public async IAsyncEnumerable<CVEItem> GetCVEByIdAsync(string cveId, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    {
+        WebServiceException.ThrowIfNullOrNotConnected(this.service);
+
+        var res = service.GetCVEsAsync([("cveId", cveId)], cancellationToken);
+        await foreach (var item in res)
+        {
+            yield return item.CastModel<CVEItem>()!;
+        }
+    }
+
+    #endregion
 }

@@ -1,7 +1,7 @@
-﻿namespace NISTWebApi.Service.Model;
+﻿//namespace NISTWebApi.Service.Model;
 
-internal class BaseMetricV2Model
-{
-    [JsonPropertyName("cvssV2")]
-    public CvssV2Model CvssV2 { get; set; }
-}
+//internal class BaseMetricV2Model
+//{
+//    [JsonPropertyName("cvssV2")]
+//    public CvssV2Model CvssV2 { get; set; }
+//}

@@ -1,6 +1,6 @@
-﻿namespace NISTWebApi.Service.Model
-{
-    internal class CVEModel
-    {
-    }
-}
+﻿//namespace NISTWebApi.Service.Model
+//{
+//    internal class CVEModel
+//    {
+//    }
+//}
