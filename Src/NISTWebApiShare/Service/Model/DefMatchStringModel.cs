@@ -3,5 +3,5 @@
 internal class DefMatchStringModel
 {
     [JsonPropertyName("matchString")]
-    public DefMatchDataModel MatchString { get; set; } = null!;
+    public MatchDataModel MatchString { get; set; } = null!;
 }

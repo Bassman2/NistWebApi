@@ -9,8 +9,8 @@ public class Cpe
         NameId = model.CpeNameId;
         Created = model.Created;
         LastModified = model.LastModified;
-        Titles = model.Titles.CastModel<DevTitle>();
-        Refs = model.Refs.CastModel<CPERef>();
+        Titles = model.Titles.CastModel<Title>();
+        Refs = model.Refs.CastModel<DefReference>();
     }
 
     public bool Deprecated { get; }
@@ -23,7 +23,7 @@ public class Cpe
 
     public DateTime? LastModified { get; }
 
-    public List<DevTitle>? Titles { get; }
+    public List<Title>? Titles { get; }
 
-    public List<CPERef>? Refs { get; }
+    public List<DefReference>? Refs { get; }
 }

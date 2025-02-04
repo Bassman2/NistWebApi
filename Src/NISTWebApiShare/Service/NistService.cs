@@ -33,10 +33,10 @@ internal class NistService(Uri host, IAuthenticator? authenticator, string appNa
         return GetPagesAsync<CpeModel, CpePageModel>(requestUri, cancellationToken, memberName);
     }
 
-    public IAsyncEnumerable<DefMatchDataModel> GetCPEMatchAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
+    public IAsyncEnumerable<MatchDataModel> GetCPEMatchAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
     {
         string requestUri = CombineUrl("rest/json/cpematch/2.0", values);
-        return GetPagesAsync<DefMatchDataModel, MatchPageModel>(requestUri, cancellationToken, memberName);
+        return GetPagesAsync<MatchDataModel, MatchPageModel>(requestUri, cancellationToken, memberName);
     }
 
     #endregion
@@ -46,7 +46,7 @@ internal class NistService(Uri host, IAuthenticator? authenticator, string appNa
     public IAsyncEnumerable<CveItemModel> GetCVEsAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
     {
         string requestUri = CombineUrl("rest/json/cves/2.0", values);
-        return GetPagesAsync<CveItemModel, CVEPageModel>(requestUri, cancellationToken, memberName);
+        return GetPagesAsync<CveItemModel, CvePageModel>(requestUri, cancellationToken, memberName);
     }
 
     public IAsyncEnumerable<ChangeItemModel> GetCVEHistoryAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")

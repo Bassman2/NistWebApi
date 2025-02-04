@@ -18,7 +18,7 @@ internal class CpeModel
     public DateTime LastModified { get; set; }
 
     [JsonPropertyName("titles")]
-    public List<DefTitleModel>? Titles { get; set; }
+    public List<TitleModel>? Titles { get; set; }
 
     [JsonPropertyName("refs")]
     public List<DefReferenceModel>? Refs { get; set; }

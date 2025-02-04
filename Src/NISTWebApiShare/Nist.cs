@@ -69,14 +69,14 @@ public sealed class Nist : IDisposable
         }
     }
 
-    public async IAsyncEnumerable<DefMatchData> GetCPEMatchByCVEIdAsync(string cveId, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<MatchData> GetCPEMatchByCVEIdAsync(string cveId, [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
         WebServiceException.ThrowIfNullOrNotConnected(this.service);
 
         var res = service.GetCPEMatchAsync([("cveId", cveId)], cancellationToken);
         await foreach (var item in res)
         {
-            yield return item.CastModel<DefMatchData>()!;
+            yield return item.CastModel<MatchData>()!;
         }
     }
 

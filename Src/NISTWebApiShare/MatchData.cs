@@ -1,8 +1,8 @@
 ﻿namespace NISTWebApi;
 
-public class DefMatchData
+public class MatchData
 {
-    internal DefMatchData(DefMatchDataModel model)
+    internal MatchData(MatchDataModel model)
     {
         MatchCriteriaId = model.MatchCriteriaId;
         Criteria = model.Criteria;

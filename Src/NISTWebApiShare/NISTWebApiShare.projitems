@@ -10,8 +10,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Cpe.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)CPERef.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)DevTitle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DefReference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Title.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CVEItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CVEScoreVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Authentication.cs" />
@@ -24,23 +24,23 @@
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV3Scope.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV3Vector.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Name.cs" />
-    <Compile Include="..\NISTWebApiShare\DefMatchData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MatchData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Nist.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\BaseMetricV2Model.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\BaseMetricV3Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\BaseMetricV2Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\BaseMetricV3Model.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ChangeItemModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ConfigModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CpeMatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CpeModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CpePageModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPERefModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPEResultModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CPETitleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\CPERefModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\CPEResultModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\CPETitleModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DefChangeModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CveItemModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEPageModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CVEResultModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\CVEModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvePageModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\CVEResultModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CveTagModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV2Model.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Vector.cs" />
@@ -48,15 +48,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV31Model.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV40Model.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DefReferenceModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DefTitleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\TitleModel.cs" />
     <Compile Include="..\NISTWebApiShare\Service\Model\NameModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DetailModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\HistoryPageModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\ImpactModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\ImpactModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\LangStringModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchPageMode.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DefMatchDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchDataModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DefMatchStringModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MetricsModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\NodeModel.cs" />
@@ -69,5 +69,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\WeaknessModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\NistService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Usings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Service\Obsolet\" />
   </ItemGroup>
 </Project>

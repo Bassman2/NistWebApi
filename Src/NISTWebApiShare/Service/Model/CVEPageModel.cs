@@ -1,6 +1,6 @@
 ﻿namespace NISTWebApi.Service.Model;
 
-internal class CVEPageModel : PageModel
+internal class CvePageModel : PageModel
 {
     [JsonPropertyName("vulnerabilities")]
     public List<DefCveItemModel>? Vulnerabilities { get; set; }

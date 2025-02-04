@@ -1,8 +1,8 @@
 ﻿namespace NISTWebApi;
 
-public class CPERef
+public class DefReference
 {
-    internal CPERef(CPERefModel model)
+    internal DefReference(DefReferenceModel model)
     {
         Ref = model.Ref;
         Type = model.Type;

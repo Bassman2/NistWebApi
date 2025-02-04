@@ -1,6 +1,6 @@
 ﻿namespace NISTWebApi.Service.Model;
 
-internal class DefMatchDataModel
+internal class MatchDataModel
 {
 
     [JsonPropertyName("criteria")]
