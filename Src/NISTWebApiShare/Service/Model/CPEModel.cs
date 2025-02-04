@@ -24,8 +24,8 @@ internal class CpeModel
     public List<DefReferenceModel>? Refs { get; set; }
 
     [JsonPropertyName("deprecatedBy")]
-    public List<DeprecateModel>? DeprecatedBy { get; set; }
+    public List<NameModel>? DeprecatedBy { get; set; }
 
     [JsonPropertyName("deprecates")]
-    public List<DeprecateModel>? Deprecates { get; set; }
+    public List<NameModel>? Deprecates { get; set; }
 }

@@ -1,8 +1,8 @@
 ﻿namespace NISTWebApi;
 
-public class Match
+public class Name
 {
-    internal Match(MatchModel model)
+    internal Name(NameModel model)
     {
         CpeName = model.CpeName;
         CpeNameId = model.CpeNameId;
@@ -10,5 +10,5 @@ public class Match
 
     public string? CpeName { get; }
 
-    public string? CpeNameId { get; }
+    public Guid? CpeNameId { get; }
 }

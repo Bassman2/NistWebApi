@@ -1,6 +1,6 @@
 ﻿namespace NISTWebApi.Service.Model;
 
-internal class DeprecateModel
+internal class NameModel
 {
     [JsonPropertyName("cpeName")]
     public string? CpeName { get; set; }

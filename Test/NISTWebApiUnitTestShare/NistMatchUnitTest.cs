@@ -36,9 +36,9 @@ public class NistMatchUnitTest : NistBaseUnitTest
        
         Assert.AreEqual(2, matchString.Matches.Count, nameof(matchString.Matches.Count));
         Assert.AreEqual("cpe:2.3:a:jpeg:libjpeg:-:*:*:*:*:*:*:*", matchString.Matches[0].CpeName);
-        Assert.AreEqual("A50FE15A-D2D7-4D0F-8C7F-F3C4692F430A", matchString.Matches[0].CpeNameId);
+        Assert.AreEqual(new Guid("A50FE15A-D2D7-4D0F-8C7F-F3C4692F430A"), matchString.Matches[0].CpeNameId);
         Assert.AreEqual("cpe:2.3:a:jpeg:libjpeg:1.63:*:*:*:*:*:*:*", matchString.Matches[1].CpeName);
-        Assert.AreEqual("4ECB946E-DF9E-401A-8A10-29ACFECE7322", matchString.Matches[1].CpeNameId);
+        Assert.AreEqual(new Guid("4ECB946E-DF9E-401A-8A10-29ACFECE7322"), matchString.Matches[1].CpeNameId);
     }
 
 }

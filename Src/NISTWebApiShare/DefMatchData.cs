@@ -11,7 +11,7 @@ public class DefMatchData
         CpeLastModified = model.CpeLastModified;
         Created = model.Created;
         Status = model.Status;
-        Matches = model.Matches.CastModel<Match>();
+        Matches = model.Matches.CastModel<Name>();
     }
 
     public string? MatchCriteriaId { get; }
@@ -28,5 +28,5 @@ public class DefMatchData
 
     public string? Status { get; }
 
-    public List<Match>? Matches { get; }
+    public List<Name>? Matches { get; }
 }
