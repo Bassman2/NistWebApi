@@ -1,7 +1,7 @@
 ﻿namespace NISTWebApi.Service.Model;
 
 [JsonSourceGenerationOptions(DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull, WriteIndented = true, AllowTrailingCommas = true, NumberHandling = JsonNumberHandling.AllowReadingFromString)]
-[JsonSerializable(typeof(CPEPageModel))]
+[JsonSerializable(typeof(CpePageModel))]
 [JsonSerializable(typeof(MatchPageModel))]
 [JsonSerializable(typeof(CVEPageModel))]
 [JsonSerializable(typeof(HistoryPageModel))]

@@ -1,7 +1,7 @@
 ﻿namespace NISTWebApi.Service.Model;
 
-internal class ProductModel
+internal class DefCpeModel
 {
     [JsonPropertyName("cpe")]
-    public CPEModel? CPE { get; set; }
+    public CpeModel? Cpe { get; set; }
 }

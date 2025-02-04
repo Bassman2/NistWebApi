@@ -27,10 +27,10 @@ internal class NistService(Uri host, IAuthenticator? authenticator, string appNa
 
     #region Products
 
-    public IAsyncEnumerable<CPEModel> GetCPEsAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
+    public IAsyncEnumerable<CpeModel> GetCPEsAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")
     {
         string requestUri = CombineUrl("rest/json/cpes/2.0", values);
-        return GetPagesAsync<CPEModel, CPEPageModel>(requestUri, cancellationToken, memberName);
+        return GetPagesAsync<CpeModel, CpePageModel>(requestUri, cancellationToken, memberName);
     }
 
     public IAsyncEnumerable<MatchStringModel> GetCPEMatchAsync((string Name, object? Value)[] values, CancellationToken cancellationToken, [CallerMemberName] string memberName = "")

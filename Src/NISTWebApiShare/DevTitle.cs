@@ -1,8 +1,8 @@
 ﻿namespace NISTWebApi;
 
-public class CPETitle
+public class DevTitle
 {
-    internal CPETitle(CPETitleModel model)
+    internal DevTitle(DefTitleModel model)
     {
         Title = model.Title;
         Lang = model.Lang;

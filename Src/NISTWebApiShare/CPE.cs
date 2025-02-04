@@ -1,15 +1,15 @@
 ﻿namespace NISTWebApi;
 
-public class CPE
+public class Cpe
 {
-    internal CPE(CPEModel model)
+    internal Cpe(CpeModel model)
     {
         Deprecated = model.Deprecated;
-        Name = model.Name;
-        NameId = model.NameId;
-        LastModified = model.LastModified;
+        Name = model.CpeName;
+        NameId = model.CpeNameId;
         Created = model.Created;
-        Titles = model.Titles.CastModel<CPETitle>();
+        LastModified = model.LastModified;
+        Titles = model.Titles.CastModel<DevTitle>();
         Refs = model.Refs.CastModel<CPERef>();
     }
 
@@ -17,13 +17,13 @@ public class CPE
 
     public string? Name { get; }
 
-    public string? NameId { get; }
-
-    public DateTime? LastModified { get; }
+    public Guid NameId { get; }
 
     public DateTime? Created { get; }
 
-    public List<CPETitle>? Titles { get; }
+    public DateTime? LastModified { get; }
+
+    public List<DevTitle>? Titles { get; }
 
     public List<CPERef>? Refs { get; }
 }

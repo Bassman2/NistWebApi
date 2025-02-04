@@ -25,47 +25,47 @@ public sealed class Nist : IDisposable
 
     #region Products
 
-    public async IAsyncEnumerable<CPE> GetCPEProductsByNameIdAsync(string nameId, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<Cpe> GetCPEProductsByNameIdAsync(Guid nameId, [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
         WebServiceException.ThrowIfNullOrNotConnected(this.service);
         
-        var res = service.GetCPEsAsync([("cpeNameId", nameId)], cancellationToken);
+        var res = service.GetCPEsAsync([("cpeNameId", nameId.ToString())], cancellationToken);
         await foreach (var item in res)
         {
-            yield return item.CastModel<CPE>()!;
+            yield return item.CastModel<Cpe>()!;
         }
     }
 
-    public async IAsyncEnumerable<CPE> GetCPEProductsMatchStringAsync(string matchString, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<Cpe> GetCPEProductsMatchStringAsync(string matchString, [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
         WebServiceException.ThrowIfNullOrNotConnected(this.service);
 
         var res = service.GetCPEsAsync([("cpeMatchString", matchString)], cancellationToken);
         await foreach (var item in res)
         {
-            yield return item.CastModel<CPE>()!;
+            yield return item.CastModel<Cpe>()!;
         }
     }
 
-    public async IAsyncEnumerable<CPE> GetCPEProductsByKeywordExactMatchAsync(string keywordSearch, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<Cpe> GetCPEProductsByKeywordExactMatchAsync(string keywordSearch, [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
         WebServiceException.ThrowIfNullOrNotConnected(this.service);
 
         var res = service.GetCPEsAsync([("keywordSearch", keywordSearch), ("keywordExactMatch", "")], cancellationToken);
         await foreach (var item in res)
         {
-            yield return item.CastModel<CPE>()!;
+            yield return item.CastModel<Cpe>()!;
         }
     }
 
-    public async IAsyncEnumerable<CPE> GetCPEProductsByKeywordSearchAsync(string keywordSearch, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<Cpe> GetCPEProductsByKeywordSearchAsync(string keywordSearch, [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
         WebServiceException.ThrowIfNullOrNotConnected(this.service);
 
         var res = service.GetCPEsAsync([("keywordSearch", keywordSearch)], cancellationToken);
         await foreach (var item in res)
         {
-            yield return item.CastModel<CPE>()!;
+            yield return item.CastModel<Cpe>()!;
         }
     }
 
