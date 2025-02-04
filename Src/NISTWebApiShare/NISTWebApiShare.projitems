@@ -54,7 +54,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\HistoryPageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Obsolet\ImpactModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\LangStringModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchPageMode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\MatchDataModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DefMatchStringModel.cs" />

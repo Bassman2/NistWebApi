@@ -3,5 +3,5 @@
 internal class DefCpeModel
 {
     [JsonPropertyName("cpe")]
-    public CpeModel? Cpe { get; set; }
+    public CpeModel Cpe { get; set; } = null!;
 }

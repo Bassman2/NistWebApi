@@ -3,5 +3,5 @@
 internal class DefCveItemModel
 {
     [JsonPropertyName("cve")]
-    public CveItemModel? Cve { get; set; }
+    public CveItemModel Cve { get; set; } = null!;
 }

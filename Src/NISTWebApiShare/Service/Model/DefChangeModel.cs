@@ -2,5 +2,6 @@
 
 internal class DefChangeModel
 {
-    public ChangeItemModel? Change { get; set; }
+    [JsonPropertyName("change")]
+    public ChangeItemModel Change { get; set; } = null!;
 }
