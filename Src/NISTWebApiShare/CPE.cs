@@ -9,7 +9,7 @@ public class Cpe
         NameId = model.CpeNameId;
         Created = model.Created;
         LastModified = model.LastModified;
-        Titles = model.Titles.CastModel<Title>();
+        Titles = model.Titles.CastModel<TitleLang>();
         Refs = model.Refs.CastModel<DefReference>();
     }
 
@@ -23,7 +23,7 @@ public class Cpe
 
     public DateTime? LastModified { get; }
 
-    public List<Title>? Titles { get; }
+    public List<TitleLang>? Titles { get; }
 
     public List<DefReference>? Refs { get; }
 }

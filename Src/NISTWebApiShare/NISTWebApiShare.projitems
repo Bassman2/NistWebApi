@@ -11,7 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Cpe.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DefReference.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Title.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TitleLang.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CVEItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CVEScoreVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums\CvssV2Authentication.cs" />
@@ -48,7 +48,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV31Model.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\CvssV40Model.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DefReferenceModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Service\Model\TitleModel.cs" />
+    <Compile Include="..\NISTWebApiShare\Service\Model\TitleLangModel.cs" />
     <Compile Include="..\NISTWebApiShare\Service\Model\NameModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\DetailModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Service\Model\HistoryPageModel.cs" />

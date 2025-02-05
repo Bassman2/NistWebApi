@@ -1,6 +1,6 @@
 ﻿namespace NISTWebApi.Service.Model;
 
-internal class TitleModel
+internal class TitleLangModel
 {
     [JsonPropertyName("title")]
     public string Title { get; set; } = null!;

@@ -29,7 +29,7 @@ public sealed class Nist : IDisposable
     {
         WebServiceException.ThrowIfNullOrNotConnected(this.service);
         
-        var res = service.GetCPEsAsync([("cpeNameId", nameId.ToString())], cancellationToken);
+        var res = service.GetCPEsAsync([("cpeNameId", nameId.ToString().ToUpper())], cancellationToken);
         await foreach (var item in res)
         {
             yield return item.CastModel<Cpe>()!;

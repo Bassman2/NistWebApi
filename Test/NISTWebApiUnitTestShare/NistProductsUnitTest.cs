@@ -27,7 +27,7 @@ public class NistProductsUnitTest : NistBaseUnitTest
         var titles = cpe.Titles.ToList();
         Assert.IsNotNull(titles, nameof(titles));
         Assert.AreEqual(1, titles.Count, nameof(titles.Count));
-        Assert.AreEqual("JPEG libjpeg", titles[0].Title_);
+        Assert.AreEqual("JPEG libjpeg", titles[0].Title);
         Assert.AreEqual("en", titles[0].Lang);
 
         Assert.IsNotNull(cpe.Refs, nameof(cpe.Refs));
