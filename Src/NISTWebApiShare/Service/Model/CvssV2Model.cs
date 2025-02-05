@@ -9,7 +9,7 @@ internal class CvssV2Model
     public string Type { get; set; } = null!;
 
     [JsonPropertyName("cvssData")]
-    public object CvssData { get; set; } = null!;
+    public CvssV2DataModel CvssData { get; set; } = null!;
 
     [JsonPropertyName("baseSeverity")]
     public string? BaseSeverity { get; set; }

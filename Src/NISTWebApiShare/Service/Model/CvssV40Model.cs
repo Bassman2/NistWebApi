@@ -9,5 +9,5 @@ internal class CvssV40Model
     public string Type { get; set; } = null!;
 
     [JsonPropertyName("cvssData")]
-    public object CvssData { get; set; } = null!;
+    public CvssV40DataModel CvssData { get; set; } = null!;
 }
