@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NISTWebApiUnitTest90", "Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NISTWebApiUnitTest80", "Test\NISTWebApiUnitTest80\NISTWebApiUnitTest80.csproj", "{16CD2FD9-01B7-44F9-A25E-38FE6EB6F2C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrams", "Diagrams", "{92FD3C8B-57B8-4B94-A7DE-A047AC09A9BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

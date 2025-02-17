@@ -6,5 +6,5 @@ internal class DefReferenceModel
     public string Ref { get; set; } = null!;
 
     [JsonPropertyName("type")]
-    public string Type { get; set; } = null!;
+    public RefType Type { get; set; }
 }
