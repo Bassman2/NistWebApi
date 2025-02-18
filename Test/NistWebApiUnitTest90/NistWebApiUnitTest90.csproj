@@ -17,13 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\NISTWebApi90\NISTWebApi90.csproj" />
+    <ProjectReference Include="..\..\Src\NistWebApi90\NistWebApi90.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
-  <Import Project="..\NISTWebApiUnitTestShare\NISTWebApiUnitTestShare.projitems" Label="Shared" />
+  <Import Project="..\NistWebApiUnitTestShare\NistWebApiUnitTestShare.projitems" Label="Shared" />
 
 </Project>

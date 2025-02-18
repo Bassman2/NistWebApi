@@ -16,14 +16,15 @@
     <PackageReference Include="System.Linq.Async.Queryable" Version="6.0.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Src\NISTWebApi80\NISTWebApi80.csproj" />
-  </ItemGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\..\Src\NistWebApi80\NistWebApi80.csproj" />
+	</ItemGroup>
+	
   <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
-  <Import Project="..\NISTWebApiUnitTestShare\NISTWebApiUnitTestShare.projitems" Label="Shared" />
+  <Import Project="..\NistWebApiUnitTestShare\NistWebApiUnitTestShare.projitems" Label="Shared" />
 
 </Project>
