@@ -1,4 +1,4 @@
-﻿namespace NISTWebApi;
+﻿namespace NistWebApi;
 
 public class DefReference
 {
@@ -10,5 +10,5 @@ public class DefReference
 
     public string? Ref { get; }
 
-    public string? Type { get; }
+    public RefType? Type { get; }
 }

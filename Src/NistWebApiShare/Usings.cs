@@ -20,6 +20,6 @@ global using WebServiceClient.Authenticator;
 global using WebServiceClient.Store;
 
 
-global using NISTWebApi.Service;
-global using NISTWebApi.Service.Model;
+global using NistWebApi.Service;
+global using NistWebApi.Service.Model;
 

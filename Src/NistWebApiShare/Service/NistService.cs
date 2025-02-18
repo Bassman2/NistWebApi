@@ -1,4 +1,4 @@
-﻿namespace NISTWebApi.Service;
+﻿namespace NistWebApi.Service;
 
 
 // https://nvd.nist.gov/developers/products

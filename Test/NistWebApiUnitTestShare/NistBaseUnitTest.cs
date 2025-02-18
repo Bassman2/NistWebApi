@@ -1,4 +1,4 @@
-﻿namespace NISTWebApiUnitTest;
+﻿namespace NistWebApiUnitTest;
 
 public abstract class NistBaseUnitTest
 {

@@ -5,6 +5,8 @@
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>NistWebApiUnitTest</AssemblyName>
+    <RootNamespace>NistWebApiUnitTest</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace NISTWebApi.Service.Model;
+﻿namespace NistWebApi.Service.Model;
 
 internal class ChangeItemModel
 {

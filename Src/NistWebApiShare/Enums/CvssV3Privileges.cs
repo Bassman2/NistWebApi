@@ -1,4 +1,4 @@
-﻿namespace NISTWebApi;
+﻿namespace NistWebApi;
 
 public enum CvssV3Privileges
 {

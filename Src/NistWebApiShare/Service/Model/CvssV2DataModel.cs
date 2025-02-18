@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NISTWebApi.Service.Model;
+namespace NistWebApi.Service.Model;
 
 internal class CvssV2DataModel
 {
