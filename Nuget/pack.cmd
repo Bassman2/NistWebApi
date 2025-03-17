@@ -1,0 +1,1 @@
+nuget pack NistWebApi.nuspec -properties Configuration=Release
