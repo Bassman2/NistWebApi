@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Src/">
+    <Project Path="../WebServiceClient/Src/WebServiceClientShare/WebServiceClientShare.shproj" />
+    <Project Path="Src/NistWebApi80/NistWebApi80.csproj" />
+    <Project Path="Src/NistWebApi90/NistWebApi90.csproj" />
+    <Project Path="Src/NistWebApiShare/NistWebApiShare.shproj" />
+  </Folder>
+  <Folder Name="/Test/">
+    <Project Path="Test/NistWebApiUnitTest80/NistWebApiUnitTest80.csproj" />
+    <Project Path="Test/NistWebApiUnitTest90/NistWebApiUnitTest90.csproj" />
+    <Project Path="Test/NistWebApiUnitTestShare/NistWebApiUnitTestShare.shproj" />
+  </Folder>
+</Solution>
