@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NISTWebApi.Service.Model.CpePageModel">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\CpePageModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Products" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.CvePageModel">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\CvePageModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Vulnerabilities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.HistoryPageModel">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\HistoryPageModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CveChanges" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.MatchPageModel">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\MatchPageMode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MatchStrings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.PageModel" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAACAAAACAgAAIBAAAAAAACAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\PageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.DefMatchStringModel">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\DefMatchStringModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MatchString" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.MatchDataModel">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAEAECAQAAAAAABAAFAACAAAAAAQAAAAAAAAAQAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\MatchDataModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Matches" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.NameModel">
+    <Position X="0.75" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\NameModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.DefCpeModel">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\DefCpeModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cpe" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.CpeModel">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAEAAAEAEAAAAAAAACCABAAAAQAAAAAAAAIAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\CpeModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Titles" />
+      <Property Name="Refs" />
+      <Property Name="DeprecatedBy" />
+      <Property Name="Deprecates" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.TitleLangModel">
+    <Position X="1.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\TitleLangModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.DefReferenceModel">
+    <Position X="3" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\DefReferenceModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.DefChangeModel">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\DefChangeModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Change" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.ChangeItemModel">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAIAAAARAgAAAAEAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\ChangeItemModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Details" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.DetailModel">
+    <Position X="7" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAQAAAAAAAAQ=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\DetailModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.DefCveItemModel">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\DefCveItemModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cve" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.CveItemModel">
+    <Position X="4.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQCAAAAAABgAAAACAEAAAACAAgQBAIggAAAAAQACAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\CveItemModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Metrics" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="CveTags" />
+      <Property Name="Descriptions" />
+      <Property Name="References" />
+      <Property Name="Weaknesses" />
+      <Property Name="Configurations" />
+      <Property Name="VendorComments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.CveTagModel">
+    <Position X="5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\CveTagModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.LangStringModel">
+    <Position X="6.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\LangStringModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.ReferenceModel">
+    <Position X="6.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAACAAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\ReferenceModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.MetricsModel">
+    <Position X="9.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\MetricsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.WeaknessModel">
+    <Position X="8.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\WeaknessModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Description" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.ConfigModel" Collapsed="true">
+    <Position X="7.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\ConfigModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NISTWebApi.Service.Model.VendorCommentModel">
+    <Position X="9.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>D:\WebServices\NISTWebApi\Src\NISTWebApiShare\Service\Model\VendorCommentModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
