@@ -13,7 +13,7 @@ public class NistProductsUnitTest : NistBaseUnitTest
         var cpe = await enu.SingleOrDefaultAsync();
 
         Assert.IsNotNull(cpe, nameof(cpe));
-        Assert.AreEqual(false, cpe.Deprecated, nameof(cpe.Deprecated));
+        Assert.IsFalse(cpe.Deprecated, nameof(cpe.Deprecated));
         Assert.AreEqual(cpeName, cpe.Name, nameof(cpe.Name));
         Assert.AreEqual(cpeNameId, cpe.NameId, nameof(cpe.NameId));
 
